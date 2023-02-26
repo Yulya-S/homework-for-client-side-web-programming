@@ -85,7 +85,7 @@ function createParagraphsText(days, hours, minutes, seconds, max) {
     if (i!=0 || days!=0){
       if (days%10 == 1 && days!=11) text+=` ${days}день`
       else{
-        if ((days%10==2 || days%10==3 || days%10==4) && days/10!=1) text+=` ${days}дня`
+        if ((days%10==2 || days%10==3 || days%10==4) && days!=12 && days!=13 && days!=14) text+=` ${days}дня`
         else text+=` ${days}дней`
       }
     }
